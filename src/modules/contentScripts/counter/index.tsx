@@ -2,15 +2,17 @@ import * as React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { Store } from 'webext-redux';
-import PopupApp from './containers/PopupApp';
+import CounterApp from './containers/CounterApp';
 
+import { createDomAnchor } from '../../../scripts/dom';
+
+createDomAnchor('counter-root');
 const store = new Store();
 
 store.ready().then(() => {
-	debugger
 	ReactDOM.render(
 		<Provider store={store}>
-			<PopupApp />
+			<CounterApp />
 		</Provider>
-		, document.getElementById('popup-root'));
+		, document.getElementById('counter-root'));
 });

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { IAppState } from '../store';
-import { IBookmark } from '../store/bookmark/reducer';
+import { IAppState } from '../../store';
+import { IBookmark } from '../../store/bookmark/reducer';
 // import { getBookmark } from '../store/bookmark/actions';
 
 const App: React.FC = () => {
