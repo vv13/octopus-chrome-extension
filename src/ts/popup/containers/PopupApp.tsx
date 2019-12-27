@@ -2,10 +2,10 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
 import styled, { ThemeProvider } from 'styled-components';
-import { IAppState } from '../../background/store';
 import GlobalStyle from '../../components/styles/GlobalStyle';
 import { themes, ThemeTypes } from '../../components/styles/themes';
 import Counter from '../../containers/Counter';
+import { IAppState } from '../../store';
 
 interface IPopupApp {
 	theme: ThemeTypes;

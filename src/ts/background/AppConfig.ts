@@ -1,8 +1,8 @@
 import { applyMiddleware, compose, createStore, Store } from 'redux';
 import { createLogger } from 'redux-logger';
 import createSagaMiddleware from 'redux-saga';
-import reducers, { IAppState, loadState, saveState } from './store';
-import { rootSaga } from './store/sagas';
+import reducers, { IAppState, loadState, saveState } from '../store';
+import { rootSaga } from '../store/sagas';
 
 const sagaMiddleware = createSagaMiddleware();
 const autoSaveAppState = (store: Store<IAppState>) => {

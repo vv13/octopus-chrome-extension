@@ -10,7 +10,8 @@
 		"clean": "rm -rf ./dist",
 		"clean:all": "rm -rf ./dist && rm -rf ./coverage && rm -rf ./node_modules",
 		"test": "jest",
-		"test:coverage": "jest --collect-coverage"
+		"test:coverage": "jest --collect-coverage",
+		"tslint-check": "tslint-config-prettier-check ./tslint.json"
 	},
 	"license": "MIT",
 	"dependencies": {
@@ -45,6 +46,7 @@
 		"react-test-renderer": "^16.12.0",
 		"ts-jest": "^24.1.0",
 		"tslint": "^5.20.1",
+		"tslint-config-prettier": "^1.18.0",
 		"typescript": "^3.7.2",
 		"webpack": "^4.41.2",
 		"webpack-cli": "^3.3.10",
