@@ -1,10 +1,7 @@
-import { createStore } from 'redux';
 import { wrapStore } from 'webext-redux';
-import { configureApp } from './AppConfig';
-import reducers, { loadState } from './store';
+import { configureApp, createReduxStore } from './AppConfig';
 
-const preloadedState = loadState();
-const store = createStore(reducers, preloadedState);
+const store = createReduxStore();
 
 configureApp(store);
 wrapStore(store);

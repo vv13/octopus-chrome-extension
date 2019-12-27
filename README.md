@@ -1,6 +1,9 @@
 <div align="center">
 
 # Octopus
+## 我使用了什么
+- 语言：React / TypeScript
+- 数据层：Redux / redux-saga / typesafe-actions
 
 </div>
 
